@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="theme-color" content="#121915">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>CruxLab — Climbing training</title>
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="icon" href="icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icon-192.png">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <a class="brand" href="#today" aria-label="CruxLab home">
+        <svg viewBox="0 0 40 40" width="36" height="36" fill="none">
+          <path d="M3 32 16 8l8 13 5-8 9 19H3Z"
+                stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+          <path d="m11 17 5 4 4-5" stroke="currentColor" stroke-width="2"/>
+        </svg>
+        <span>crux<span>lab.</span><small>CLIMBING PERFORMANCE</small></span>
+      </a>
+      <button id="settings" class="iconbutton" aria-label="Data and settings">⚙</button>
+    </header>
+    <main id="view" tabindex="-1"></main>
+    <nav id="nav" aria-label="Main navigation"></nav>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <dialog id="modal">
+      <div id="modal-content"></div>
+    </dialog>
+    <script src="app.js" defer></script>
+  </body>
+</html>
